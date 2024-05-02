@@ -22,11 +22,11 @@ pipeline {
 		    steps {
 			script {
 			 if ( env.ENV == 'QA' ){
-        	sh 'cp target/PIPELINE.war /home/aditya/Documents/apache-tomcat-9.0.88/webapps'
+        	sh 'cp target/PIPELINE-1.war /home/aditya/Documents/apache-tomcat-9.0.88/webapps'
         	echo "deployment has been COMPLETED on QA!"
 			 }
 			else ( env.ENV == 'UAT' ){
-    		sh 'cp target/PIPELINE.war /home/aditya/Documents/apache-tomcat-9.0.88/webapps'
+    		sh 'cp target/PIPELINE-1.war /home/aditya/Documents/apache-tomcat-9.0.88/webapps'
     		echo "deployment has been done on UAT!"
 			}
 			}}}	
